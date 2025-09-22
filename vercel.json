@@ -1,18 +1,7 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./main.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/main.py"
-        }
-    ]
-
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "Play Store Data (1).xlsx"
+    }
+  }
 }
-
-
